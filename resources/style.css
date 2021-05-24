@@ -1,0 +1,645 @@
+
+/* Universal Styles */
+
+html, body {
+  font-family: "Poppins", sans-serif;
+  color: #2E2E2E;
+  background-color: white;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+a {
+  color: #c5b500;
+  text-decoration: none;
+  }
+
+a:hover {
+  color: #2E2E2E;
+  font-weight: bolder;
+}
+
+p {
+ line-height: 1.5rem;
+}
+
+.flex-container {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.flex-container-small {
+  display: flex;
+  max-width: 100%;
+  flex-flow: wrap column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  display: block;
+}
+
+/* Header Section  destop*/
+header-mobile {
+  display: none;
+}
+header {
+  display: flex;
+  max-width: 100%;
+  position:fixed;
+  z-index: 1;
+  background-color: #E69F00;
+  height: 64px;
+  justify-content: space-between;
+}
+
+.flex-container .logo {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container .logo img {
+  padding-left: 24px;
+  margin: 0mm;
+  height: 48px;
+}
+
+nav {
+  display: inline-flex;
+  padding-right: 24px;
+  text-align: right;
+  align-items: center;
+}
+
+nav span {
+  display: inline-block;
+  margin: 0;
+  padding: 0px 0px 0px 16px;
+}
+ a {
+   color: white;
+ }
+ a:hover, a:active {
+   color: white;
+   font-weight: bolder;
+ }
+
+/* Header Section  mobile*/
+@media only screen and (max-width: 700px) {
+header {
+    display: none;
+}
+header-mobile {
+   display: flex;
+   width: 100%;
+   height: 64px;
+   justify-content: space-around;
+   align-items: center;
+   z-index: 6;
+   position: fixed;
+   background-color:#E69F00;
+  }
+
+}
+
+/*Banner Section destop*/
+.banner-mobil {
+  display: none;
+}
+
+.container-banner {
+  display: flex;
+  padding-top: 96px;
+  padding-bottom: 32px;
+  padding-left: 24px;
+  position: relative;
+  flex: 1 1 100%;
+  background-color: whitesmoke;
+}
+
+.container-banner .imgBx {
+  display: inline-flex;
+  flex: 1 1 60%;
+  margin-right: 24px;
+}
+
+.container-banner .imgBx img {
+   max-width: 100%;
+}
+
+.container-banner .content {
+  display: inline-flex;
+  flex: 1 1 40%;
+  flex-flow: wrap column;
+  text-align: left;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  background-color: #E69F00;
+  text-decoration: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: inline-block;
+  max-width: 90%;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin-top: 1.2rem;
+}
+
+button:hover , button:active {
+  background-color: #E69F00;
+  bottom: 2px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.container h1, .container h3 {
+  margin: 0.5rem;
+}
+
+
+/*Banner Section mobile*/
+@media only screen and (max-width: 700px){
+
+.container-banner {
+  display: none;
+}
+
+.banner-mobil {
+  display: flex;
+  flex-flow: wrap column;
+  max-width: 100%;
+  position: relative;
+  background-color:#eeeeeb;
+}
+
+.banner-mobil .imgBx {
+  display: flex;
+  margin-top: 64px;
+}
+
+.banner-mobil img {
+  max-width: 100%;
+}
+
+.banner-mobil .content {
+  display: flex;
+  flex-flow: wrap column;
+  flex: 1 1 100%;
+  padding: 32px 16px;
+  justify-content: center;
+  text-align: left;
+
+}
+
+.banner-mobil h3 {
+  margin-top: 32px;
+}
+
+.banner-mobil button {
+  color: white;
+  background-color: #E69F00;
+  text-decoration: none;
+  max-width: 95%;
+  display: inline-block;
+  margin-top: 24px;
+  margin-bottom: 32px;
+
+}
+
+.banner-mobil button:hover {
+  position: relative;
+  background-color: #E69F00;
+  bottom: 2px;
+  cursor: pointer;
+}
+}
+
+
+/* Info section - destop */
+.card-info {
+  display: none;
+}
+
+.container-info {
+  display: flex;
+  flex: 1 1 100%;
+  position: relative;
+  border-bottom: 1px solid whitesmoke;
+}
+
+.container-info .card-practice {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 32px 24px;
+  flex: 1 1 60%;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.container-info .card-practice .imgBx {
+  display: flex;
+  flex: 1 1 60%;
+}
+
+.container-info .card-practice .imgBx img {
+  max-width: 100%;
+}
+
+.container-info .card-practice .content {
+  display: flex;
+  flex-flow: wrap column;
+  flex: 1 1 60%;
+  text-align: left;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.col-2 {
+  position: relative;
+  display: inline-block;
+  clear: right;
+  border-left: 1px solid whitesmoke;
+  border-top: 1px solid whitesmoke;
+  max-width: 40%;
+}
+
+.col-2 .card {
+  display: flex;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  flex: 1 1 40%;
+ }
+
+ #lecture {
+   background-color: whitesmoke;
+ }
+
+.col-2 .card .imgBx {
+  display: inline;
+  float: left;
+  clear: left;
+  width: 35%;
+  padding: 16px 16px;
+}
+
+.col-2 .card .imgBx img {
+  max-width: 100%;
+}
+
+.col-2 .card .content {
+  display: inline-flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  position: relative;
+  text-align: left;
+  max-width: 65%;
+}
+
+.col-2 .card .content h3, p{
+  margin: 0.6px;
+}
+.col-2 a {
+  color: hsl(216, 81%, 62%);
+}
+.col-2 a:hover, .col-2 a:active {
+  font-weight: bolder;
+  color: hsl(216, 81%, 62%);
+}
+
+/* Content section -mobile */
+@media only screen and (max-width: 700px) {
+.container-info {
+    display: none;
+  }
+
+.card-info {
+  display: flex;
+  flex-flow: wrap column;
+  flex: 1 1 100%;
+  position: relative;
+  padding: 16px;
+}
+
+.card-info .imgBx {
+  display: flex;
+  flex-flow: wrap column;
+  flex: 1 1 100%;
+}
+
+.card-info .imgBx img {
+  max-width: 100%;
+
+}
+
+.card-info .content {
+  display: flex;
+  flex-flow: wrap column;
+  flex: 1 1 100%;
+  padding: 32px 16px;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+}
+ a {
+   color: hsl(216, 81%, 62%);
+ }
+
+ a:hover, a:active {
+   font-weight: bolder;
+   color: hsl(216, 81%, 62%);
+ }
+}
+
+/* Start learning section destop*/
+.subject-card {
+  display: none;
+}
+
+.container-start-learning {
+  display: flex;
+  flex-flow: wrap row;
+  flex: 1 1 100%;
+  background-color: whitesmoke;
+  justify-content: center;
+  align-items: space-between;
+  padding-left: 72px;
+  padding-right: 72px;
+  position: relative;
+  padding-bottom: 32px;
+}
+.title {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  padding-top: 32px;
+}
+.title div {
+  max-width: 100%;
+  text-align: center;
+}
+
+.card-subject {
+  display: flex;
+  flex-flow: wrap column;
+  position: relative;
+  max-width: 25%;
+  margin: 32px;
+}
+
+.card-subject .imgBx {
+  display: flex;
+  flex: 1 1 26%;
+}
+
+.card-subject .imgBx img{
+  max-width: 100%;
+}
+
+.card-subject .content {
+  display: flex;
+  flex-flow: wrap column;
+  position: relative;
+  text-align: left;
+  padding-top: 16px;
+  padding-left: 16px;
+  flex: 1 1 26%;
+  background-color: white;
+
+}
+
+.card-subject .content h2 {
+  margin: 0px;
+  max-width: 90%;
+  display: flex;
+}
+
+.card-subject .content p {
+  margin-left: 0px;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  max-width: 90%;
+  font-size: 0.9rem;
+  display: flex;
+
+}
+
+#subtitle {
+  text-transform: uppercase;
+  display: flex;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 0px;
+
+}
+
+/* Start learning section mobile*/
+@media only screen and (max-width: 700px){
+
+
+.container-start-learning, .section-subtitle {
+  display: none;
+}
+
+.subject-card {
+  display: flex;
+  flex: 1 1 100%;
+  padding-bottom:  32px;
+  margin: 0px;
+  position: relative;
+  border: 1px solid whitesmoke;
+}
+
+.subject-card h2 {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 24px;
+  background-color: #E69F00;
+  text-align: left;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  margin-top: 0px;
+}
+.subject-card a {
+  background-color: #E69F00;
+  color: #fff;
+
+}
+.subject-card a:hover, a:active {
+  font-weight: bolder;
+
+}
+}
+/*Thesis exhibit destop*/
+.thesis-card {
+    display: none;
+}
+
+#subject {
+  background-color: whitesmoke;
+}
+
+.title {
+  display: flex;
+  flex: 1 1 100%;
+  justify-content: center;
+  padding-top: 32px;
+}
+.title div {
+  max-width: 100%;
+  text-align: center;
+}
+.container-thesis-exhibit {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 32px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-video {
+  display: flex;
+  flex-flow: wrap column;
+  flex: 1 1 60%;
+  padding-left: 24px;
+  padding-right: 24px;
+  text-align: left;
+}
+
+.card-video .videoBx {
+  display: flex;
+  flex: 1 1 60%;
+  border: 4px solid whitesmoke;
+ }
+
+.card-video .videoBx video {
+  max-width: 100%;
+}
+
+.card-video .content {
+  display: flex;
+  flex: 1 1 60%;
+  flex-flow: wrap column;
+  text-align: left;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card-video .content h3 {
+  margin-bottom: 8px;
+  margin-top: 24px;
+}
+
+.card-video .content p {
+  line-height: 1.5rem;
+  margin-bottom: 32px;
+}
+
+.container-thesis-exhibit .col-2 {
+  display: inline-block;
+  max-width: 40%;
+  clear: left;
+  position: relative;
+}
+
+.container-thesis-exhibit .col-2 .card {
+  display: flex;
+  flex: 1 1 100%;
+  text-align: left;
+  margin: 0;
+}
+
+.container-thesis-exhibit .col-2 .card .imgBx {
+  display: inline;
+  float: left;
+  clear: left;
+  width: 35%;
+  height: auto;
+}
+
+.container-thesis-exhibit .col-2 .card .imgBx img {
+  width: 100%;
+}
+
+.container-thesis-exhibit .col-2 .card .content {
+  display: inline-flex;
+  flex: 1 1 65%;
+  padding-left: 16px;
+}
+
+/*Thesis exhibit mobile*/
+@media only screen and (max-width: 700px){
+  .container-thesis-exhibit, .main {
+    display:none;
+  }
+  .thesis-card {
+    display: flex;
+    flex: 1 1 100%;
+    margin-bottom: 24px;
+    position: relative;
+
+  }
+  .thesis-card video {
+    max-width: 100%;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 100%;
+    text-align: left;
+    border-top: 2px solid whitesmoke;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 0.4rem;
+  }
+  .term, .term div, .term p, .term a {
+    display: none;
+  }
+
+  .rights p {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/*Footer section destop*/
+
+
+footer {
+  display: flex;
+  flex: 1 1 100%;
+  border-top: 2px solid whitesmoke;
+  padding-top: 16px;
+  margin: 32px 24px;
+  font-size: 0.9rem;
+}
+
+.rights {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: flex-start;
+  color: inherit;
+}
+
+.term {
+  display: flex;
+  flex: 1 1 50%;
+  justify-content: flex-end;
+  color: inherit;
+}
+
+.term a {
+  color: inherit;
+  padding-left: 8px;
+}
